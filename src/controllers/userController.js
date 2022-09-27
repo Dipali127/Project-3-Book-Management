@@ -98,6 +98,7 @@ const login = async function (req, res) {
 
         const userName = data.email;
         const password = data.password;
+        
 
 
         if (!isValid(userName)) { return res.status(400).send({ status: false, message: "Email is required" }) }
